@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Transfer Market</title>
+  <link rel="stylesheet" href="./paginas/style.css">
+</head>
+<body>
+  <header id="site-logo" class="site-header">
+    <div class="logo">🏆</div>
+    <h1>Transfer Market</h1>
+  </header>
+
+  <nav class="site-nav">
+    <button class="nav-btn" data-target="noticias">📰 Lo más reciente</button>
+    <button class="nav-btn" data-target="clubes">🏆 Ligas</button>
+    <button class="nav-btn" data-target="simulador">📝 Simulador</button>
+    <button class="nav-btn" data-target="about">ℹ️ Sobre Nosotros</button>
+  </nav>
+
+  <main id="main-content">
+    <section id="noticias" class="card">
+      <h2>📰 Lo más reciente</h2>
+      <div class="news-grid">
+        <article class="news-card">
+          <img src="./imagenes/transfer.jpeg" alt="Transferencia 1"/>
+          <div class="news-body">
+            <h3>🔥 Transferencia: Juan Pérez confirmado en FC Barcelona</h3>
+            <p>💰 Monto: 15,000,000 — Contrato por 4 años.</p>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <img src="./imagenes/entrevista.jpg" alt="Entrevista"/>
+          <div class="news-body">
+            <h3>🎤 Entrevista: Marcos García — "Quiero quedarme en River"</h3>
+            <p>Declaraciones recientes luego del último partido.</p>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <img src="./imagenes/rumor.png" alt="Rumor"/>
+          <div class="news-body">
+            <h3>⚽ Rumor: David Smith cerca de renovar con Manchester United</h3>
+            <p>Negociaciones avanzadas según fuentes.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="clubes" class="card hidden">
+      <h2>🏆 Ligas</h2>
+      <div class="league-boxes" id="league-boxes"></div>
+      <h3>Plantel completo</h3>
+      <table id="players-table" class="data-table"></table>
+    </section>
+
+    <section id="simulador" class="card hidden">
+      <h2>📝 Simulador de Fichajes</h2>
+      <div class="form-row">
+        <label>Club vendedor</label>
+        <select id="clubVendedor"></select>
+      </div>
+      <div class="form-row">
+        <label>Jugador</label>
+        <select id="jugador"></select>
+      </div>
+      <div class="form-row">
+        <label>Club comprador</label>
+        <select id="clubComprador"></select>
+      </div>
+      <div class="form-row">
+        <label>Oferta 💵</label>
+        <input type="number" id="oferta" placeholder="Ingrese monto en números" />
+      </div>
+      <div class="form-row">
+        <button id="btnSimular" class="btn-primary">Enviar oferta 🚀</button>
+      </div>
+      <p id="resultado" class="resultado"></p>
+    </section>
+
+    <section id="about" class="card hidden">
+      <h2>ℹ️ Sobre Nosotros</h2>
+      <p>Somos un equipo apasionado por el fútbol y la tecnología. Transfer Market es un proyecto que busca simular el mercado de fichajes, mostrar información de jugadores, contratos y clubes con una experiencia visual atractiva.</p>
+      <h3>👥 Integrantes del Proyecto</h3>
+      <ul class="team-list">
+        <li>Abhay Rodriguez — 📧 abhayrodriguezcara@gmail.com</li>
+        <li>Gael Gonzalez — 📧 gaelox162@gmail.com</li>
+        <li>Roman Rey — 📧 roman2006rey@gmail.com</li>
+        <li>Santiago Mendez — 📧 santimendez.et35@gmail.com</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    ⚽ Proyecto Transfer Market.
+  </footer>
+  <script src="./paginas/script.js"></script>
+</body>
+</html>
